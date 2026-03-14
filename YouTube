@@ -19,7 +19,7 @@
 "channels":[
 {
 "id":"match1",
-"name":"🏐 Voreas Hokkaido vs Nagano",
+"name":"Ngã Bất Hậu Hối",
 "type":"single",
 "display":"thumbnail-only",
 "image":{
@@ -29,7 +29,7 @@
 {
 "name":"YouTube",
 "type":"youtube",
-"url":"https://www.youtube.com/embed/VIDEO_ID"
+"url":"https://youtu.be/xjVGu28utbc?si=g9yTKHnb-oDriv8L"
 }
 ],
 "labels":[
