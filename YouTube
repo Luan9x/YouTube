@@ -1,14 +1,20 @@
 {
   "status": "ok",
-  "app": "music_player",
+  "app": {
+    "name": "YouTube",
+    "version": "1.0.0",
+    "developer": "ALUAN Music"
+  },
+
   "search": {
-    "query": "tên bài hát",
+    "query": "song name",
     "results": [
       {
         "videoId": "dQw4w9WgXcQ",
         "title": "Never Gonna Give You Up",
         "artist": "Rick Astley",
         "duration": "3:33",
+        "views": "1.4B",
         "thumbnail": "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
       },
       {
@@ -16,34 +22,104 @@
         "title": "Despacito",
         "artist": "Luis Fonsi",
         "duration": "4:20",
+        "views": "8.3B",
         "thumbnail": "https://i.ytimg.com/vi/kJQP7kiw5Fk/hqdefault.jpg"
       }
     ]
   },
+
   "player": {
     "current": {
       "videoId": "dQw4w9WgXcQ",
       "title": "Never Gonna Give You Up",
       "artist": "Rick Astley",
+      "duration": "3:33",
       "audio": {
-        "url": "https://your-api.com/stream/dQw4w9WgXcQ",
+        "url": "https://api.yourserver.com/stream/dQw4w9WgXcQ",
         "format": "mp3",
-        "bitrate": "128kbps"
+        "quality": "128kbps"
       },
       "thumbnail": "https://i.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
-    }
+    },
+
+    "queue": [
+      {
+        "videoId": "kJQP7kiw5Fk",
+        "title": "Despacito",
+        "artist": "Luis Fonsi"
+      }
+    ]
   },
-  "playlist": {
-    "name": "Nhạc yêu thích",
-    "songs": [
+
+  "lyrics": {
+    "videoId": "dQw4w9WgXcQ",
+    "lines": [
+      { "time": "00:10", "text": "We're no strangers to love" },
+      { "time": "00:14", "text": "You know the rules and so do I" },
+      { "time": "00:18", "text": "A full commitment's what I'm thinking of" }
+    ]
+  },
+
+  "playlist": [
+    {
+      "id": "pl001",
+      "name": "Favorite Songs",
+      "songs": [
+        {
+          "videoId": "dQw4w9WgXcQ",
+          "title": "Never Gonna Give You Up",
+          "artist": "Rick Astley"
+        },
+        {
+          "videoId": "kJQP7kiw5Fk",
+          "title": "Despacito",
+          "artist": "Luis Fonsi"
+        }
+      ]
+    }
+  ],
+
+  "trending": [
+    {
+      "videoId": "kJQP7kiw5Fk",
+      "title": "Despacito",
+      "artist": "Luis Fonsi",
+      "views": "8.3B",
+      "thumbnail": "https://i.ytimg.com/vi/kJQP7kiw5Fk/hqdefault.jpg"
+    },
+    {
+      "videoId": "dQw4w9WgXcQ",
+      "title": "Never Gonna Give You Up",
+      "artist": "Rick Astley",
+      "views": "1.4B",
+      "thumbnail": "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
+    }
+  ],
+
+  "artist": {
+    "name": "Rick Astley",
+    "followers": "5M",
+    "avatar": "https://yt3.ggpht.com/avatar.jpg",
+    "topSongs": [
       {
         "videoId": "dQw4w9WgXcQ",
         "title": "Never Gonna Give You Up"
-      },
-      {
-        "videoId": "kJQP7kiw5Fk",
-        "title": "Despacito"
       }
     ]
-  }
+  },
+
+  "albums": [
+    {
+      "albumId": "alb001",
+      "title": "Whenever You Need Somebody",
+      "artist": "Rick Astley",
+      "year": "1987",
+      "songs": [
+        {
+          "videoId": "dQw4w9WgXcQ",
+          "title": "Never Gonna Give You Up"
+        }
+      ]
+    }
+  ]
 }
